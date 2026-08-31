@@ -62,7 +62,7 @@ const PROJECTS = [
   /////////////////////////////
   { name:"Space Hunt", picture:"",
   desc:"Ce projet avait pour but de coder entièrement un ancien jeux vidéo nommé Duck Hunt. En se basant sur la version original du jeux, j'ai fais le choix de le faire dans un univers spatial. L'objectif est de tuer tous les aliènes sans les laisser s'échapper. Il y a un système de vie qui donne la possibilité aux joueurs d'avoir 5 tentatives pour réussir. Plus un joueur tue les aliènes plus son score augmente.",
-  video:"public/video/Space-Hunt.mp4",
+  video:"/video/Space-Hunt.mp4",
   duree:"4 semaines",
   fonction:"Jeux vidéo",
   memo:"Vidéo représentant le jeux",
@@ -71,7 +71,7 @@ const PROJECTS = [
 
   { name:"Sokoban", picture:"",
   desc:"Ce projet avait pour but de coder entièrement un ancien jeux vidéo nommé Duck Hunt. En se basant sur la version original du jeux, j'ai fais le choix de le faire dans un univers spatial. L'objectif est de tuer tous les aliènes sans les laisser s'échapper. Il y a un système de vie qui donne la possibilité aux joueurs d'avoir 5 tentatives pour réussir. Plus un joueur tue les aliènes plus son score augmente.",
-  video:"src/assets/video/Sokoban.mp4",
+  video:"/video/Sokoban.mp4",
   duree:"4 semaines",
   fonction:"Jeux vidéo",
   memo:"Vidéo représentant le jeux",
@@ -84,7 +84,7 @@ const PROJECTS = [
   ////////////////////////////
   { name:"BSQ", picture:"",
   desc:"Création et résolution d'un labyrinthe en prenant en compte différent algorithme.",
-  video:"src/assets/video/BSQ.mp4",
+  video:"/video/BSQ.mp4",
   duree:"2 semaines",
   fonction:"Algorithmie",
   memo:"Vidéo non représentatif du projet final",
@@ -93,7 +93,7 @@ const PROJECTS = [
 
   { name:"LS", picture:"",
   desc:"Création et résolution d'un labyrinthe en prenant en compte différent algorithme.",
-  video:"src/assets/video/LS.mp4",
+  video:"/video/LS.mp4",
   duree:"2 semaines",
   fonction:"Algorithmie",
   memo:"Vidéo non représentatif du projet final",
@@ -106,7 +106,7 @@ const PROJECTS = [
   /////////////////////////////
   { name:"Cesar", picture:"",
   desc:"Logiciel de cryptage de fichier fonctionnant autant avec des images/vidéos qu'avec des fichiers de type '.txt'",
-  video:"src/assets/video/Cesar.mp4",
+  video:"/video/Cesar.mp4",
   duree:"En cours...",
   fonction:"Chiffrement",
   memo:"Vidéo représentant le résultat",
@@ -115,7 +115,7 @@ const PROJECTS = [
 
   { name:"Password Generator", picture:"",
   desc:"Logiciel de cryptage de fichier fonctionnant autant avec des images/vidéos qu'avec des fichiers de type '.txt'",
-  video:"src/assets/video/PasswordGenerator.mp4",
+  video:"/video/PasswordGenerator.mp4",
   duree:"En cours...",
   fonction:"Chiffrement",
   memo:"Vidéo représentant le résultat",
@@ -128,7 +128,7 @@ const PROJECTS = [
   /////////////////////////
   { name:"First LAN", picture:"",
   desc:"Création d'un premier réseaux LAN avec une configuration simple.",
-  video:"src/assets/video/Network-TCP_IP.mp4",
+  video:"/video/Network-TCP_IP.mp4",
   duree:"Fonctionnel",
   fonction:"Réseaux",
   memo:"Vidéo représentant le résultat",
@@ -137,7 +137,7 @@ const PROJECTS = [
 
   { name:"LAN and DHCP", picture:"",
   desc:"Création d'un réseaux LAN avec un serveur DHCP pour une attribution automatique des adresses IP.",
-  video:"src/assets/video/Network-TCP_IP_DHCP.mp4",
+  video:"/video/Network-TCP_IP_DHCP.mp4",
   duree:"Fonctionnel",
   fonction:"Réseaux",
   memo:"Vidéo représentant le résultat",
@@ -146,7 +146,7 @@ const PROJECTS = [
 
   { name:"LAN, DHCP and DNS", picture:"",
   desc:"Création d'un réseaux LAN avec un serveur DHCP et DNS pour une attribution automatique des adresses IP et une redirection des messages à partir d'un nom qui sera ensuite convertis en adresse IP.",
-  video:"src/assets/video/Network-TCP_IP_DHCP_DNS.mp4",
+  video:"/video/Network-TCP_IP_DHCP_DNS.mp4",
   duree:"Fonctionnel",
   fonction:"Réseaux",
   memo:"Vidéo représentant le résultat",
@@ -307,7 +307,7 @@ function ProjectCard({ project, delay }) {
               }}
               // poster={project.picture}
             >
-              <source src={project.video} type="video/mp4" style={{ width: "100%" }}/>
+              <source src={`${import.meta.env.BASE_URL}${project.video}`} type="video/mp4" style={{ width: "100%" }}/>
             </video>
           </div>
         )}
