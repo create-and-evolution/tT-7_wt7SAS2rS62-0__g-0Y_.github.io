@@ -62,7 +62,7 @@ const PROJECTS = [
   /////////////////////////////
   { name:"Space Hunt", picture:"",
   desc:"Ce projet avait pour but de coder entièrement un ancien jeux vidéo nommé Duck Hunt. En se basant sur la version original du jeux, j'ai fais le choix de le faire dans un univers spatial. L'objectif est de tuer tous les aliènes sans les laisser s'échapper. Il y a un système de vie qui donne la possibilité aux joueurs d'avoir 5 tentatives pour réussir. Plus un joueur tue les aliènes plus son score augmente.",
-  video:"src/assets/video/Space-Hunt.mp4",
+  video:"public/video/Space-Hunt.mp4",
   duree:"4 semaines",
   fonction:"Jeux vidéo",
   memo:"Vidéo représentant le jeux",
