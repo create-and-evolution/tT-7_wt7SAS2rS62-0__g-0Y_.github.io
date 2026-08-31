@@ -380,7 +380,7 @@ export default function CyberPortfolio() {
     {keys: "Langages", value: "C, C++, HTML/CSS, Python"},
     {keys: "Apprentissage", value: "Majoritairement en autodidacte"},
     {keys: "Domaines", value: "CTF, Réseaux et Développement"},
-    {keys: "GitHub", value: "Le code des projets", links: "https://github.com/create-and-evolution"},
+    {keys: "GitHub", value: "Le code des projets", links: "https://github.com/create-and-evolution/kM_68z1-_Q-LonW"},
     {keys: "LinkedIn", value: "Profil professionnel", links: "https://www.linkedin.com/in/chafaantie-s-062a6436a/"},
   ];
 
